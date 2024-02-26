@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사이트 메인 페이지</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header를 index.ejs 포함시키다 import와 비슷한 개념 -->
+    <%- include('header') %>
+    <img src="img/spring1.jpg" />
+    <a href="/sub">자네 서브페이지로 이동하고 싶은가</a>
+    <div>
+      메인페이지 경로로 요청하면 해당 ejs 파일을 웹브라우저가 인식할 수 있도록 html 형식으로 변환해서 보여줍니다.
+    </div>
+    <ul class="menu">
+      <li>메뉴1</li>
+      <li>메뉴2</li>
+      <li>메뉴3</li>
+    </ul>
+    <%- include('footer') %>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/bg.js"></script>
+  </body>
+</html>
